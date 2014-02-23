@@ -390,7 +390,9 @@ var keywords = {
 	'inline-flex': 'display',
 	'grid': 'display',
 	'inline-grid': 'display',
-	'min-content': 'width'
+	'min-content': 'width',
+	'animation': 'foo 1s ease-in-out',
+	'animation-name': 'foo'
 };
 
 self.functions = [];
