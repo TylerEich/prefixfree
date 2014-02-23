@@ -231,6 +231,13 @@ var self = window.PrefixFree = {
 		return css;
 	},
 	
+	// Blink animation hotfix (issue #188)
+	prefixBlinkAnimation: function(css, raw, element) {
+		if (window.navigator.userAgent.indexOf('Chrome') > -1) {
+			// Fix goes here
+		}
+	},
+	
 	property: function(property) {
 		return (self.properties.indexOf(property) >=0 ? self.prefix : '') + property;
 	},
@@ -390,8 +397,7 @@ var keywords = {
 	'inline-flex': 'display',
 	'grid': 'display',
 	'inline-grid': 'display',
-	'min-content': 'width',
-	'foo': 'animation'
+	'min-content': 'width'
 };
 
 self.functions = [];
