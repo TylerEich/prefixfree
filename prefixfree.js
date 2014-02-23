@@ -391,8 +391,7 @@ var keywords = {
 	'grid': 'display',
 	'inline-grid': 'display',
 	'min-content': 'width',
-	'animation': 'foo 1s ease-in-out',
-	'animation-name': 'foo'
+	'foo': 'animation'
 };
 
 self.functions = [];
